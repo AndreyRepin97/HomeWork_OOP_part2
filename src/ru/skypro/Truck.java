@@ -1,6 +1,5 @@
 package ru.skypro;
 
-
 public class Truck extends Technique implements ChekEngine{
 
     public Truck(String modelName, int wheelsCount) {
@@ -11,7 +10,7 @@ public class Truck extends Technique implements ChekEngine{
         System.out.println("Проверяем прицеп");
     }
     @Override
-    public void check(Technique technique) {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();

@@ -1,16 +1,18 @@
 package ru.skypro;
 
-public class Technique{
+abstract class Technique{
 
-    protected String modelName;
-    protected int wheelsCount;
+    private String modelName;
+    private int wheelsCount;
+
+
 
     public Technique(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
-    public void check(Technique technique){
-    }
+    abstract void check();
+
     public void setModelName(String modelName) {
         this.modelName = modelName;
     }
